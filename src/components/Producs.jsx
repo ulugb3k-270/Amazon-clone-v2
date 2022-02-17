@@ -26,7 +26,7 @@ function Producs({ id, title, price, description, category, image, index}) {
   };
 
   return (
-    <div className={`relative flex flex-col m-5 bg-white rounded-md z-${index} p-10`}>
+    <div className={`relative flex flex-col m-5 bg-white rounded-md z-[4] p-10`}>
       <p className="absolute top-2 right-2 text-gray-400 text-xs italic">
         {category}
       </p>

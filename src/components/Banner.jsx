@@ -4,7 +4,7 @@ function Banner() {
   return (
     
     <div className="relative">
-        <div className="absolute w-full h-16 md:h-32 bg-gradient-to-t from-gray-100  to-transparent bottom-0 z-20" />
+        <div className="absolute w-full h-16 md:h-32 bg-gradient-to-t from-gray-100  to-transparent bottom-0 z-[3]" />
       <Carousel
         autoPlay
         infiniteLoop
