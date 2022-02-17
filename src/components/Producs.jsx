@@ -4,7 +4,7 @@ import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../slices/basketSlice";
 
-function Producs({ id, title, price, description, category, image }) {
+function Producs({ id, title, price, description, category, image, index}) {
   const [rating] = useState(Math.floor(Math.random() * 5) + 1);
 
   const [hasPrime] = useState(Math.random() < 0.5);
@@ -26,7 +26,7 @@ function Producs({ id, title, price, description, category, image }) {
   };
 
   return (
-    <div className="relative flex flex-col m-5 bg-white rounded-md z-30 p-10">
+    <div className={`relative flex flex-col m-5 bg-white rounded-md z-${index} p-10`}>
       <p className="absolute top-2 right-2 text-gray-400 text-xs italic">
         {category}
       </p>

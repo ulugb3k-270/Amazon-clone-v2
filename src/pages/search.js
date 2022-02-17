@@ -31,6 +31,7 @@ function Search() {
             description={product.description}
             category={product.category}
             image={product.image}
+            index="999"
           />
         ))}
       </section>

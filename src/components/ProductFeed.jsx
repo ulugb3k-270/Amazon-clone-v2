@@ -14,6 +14,7 @@ function ProductFeed({ products }) {
             description={description}
             category={category}
             image={image}
+            index="30"
           />
         ))}
 
@@ -35,6 +36,7 @@ function ProductFeed({ products }) {
               description={description}
               category={category}
               image={image}
+              index="30"
             />
           ))}
       </div>
@@ -49,6 +51,7 @@ function ProductFeed({ products }) {
               description={description}
               category={category}
               image={image}
+              index="30"
             />
           ))}
     </div>
