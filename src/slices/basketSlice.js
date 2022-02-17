@@ -20,7 +20,8 @@ export const basketSlice = createSlice({
       if (index >= 0) {
         newBasket.splice(index, 1);
       } else {
-        console.warn(`can remove product (id: ${action.payload.id})`);
+        console.warn(`cant remove product (id: ${action.payload.id})`);
+        
       }
 
       state.items = newBasket;

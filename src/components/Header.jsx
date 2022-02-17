@@ -31,7 +31,7 @@ function Header() {
           />
         </div>
         {/* Search Input */}
-        <div className="hidden sm:flex items-center h-10 rounded-md flex-grow bg-yellow-400 hover:bg-yellow-500 cursor-pointer ">
+        <div className="hidden sm:flex items-center h-10 rounded-md flex-grow bg-yellow-400 hover:bg-yellow-500 cursor-pointer " onClick={() => router.push('/search')}>
           <input
             type="text"
             className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md outline-none px-4"

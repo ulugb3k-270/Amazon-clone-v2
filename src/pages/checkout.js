@@ -9,6 +9,7 @@ function Basket() {
   const items = useSelector(selectItems);
   const { data: session } = useSession();
   const total = useSelector(selectTotal);
+  
   return (
     <div className="bg-gray-100">
       <Header />

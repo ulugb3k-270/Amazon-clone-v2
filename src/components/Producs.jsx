@@ -12,7 +12,6 @@ function Producs({ id, title, price, description, category, image }) {
   const dispatch = useDispatch();
 
   const addItemToBasket = () => {
-
     const product = {
       id,
       title,
@@ -20,10 +19,10 @@ function Producs({ id, title, price, description, category, image }) {
       description,
       category,
       image,
-      hasPrime
-    }
+      hasPrime,
+    };
 
-    dispatch(addToBasket(product))
+    dispatch(addToBasket(product));
   };
 
   return (
@@ -37,7 +36,7 @@ function Producs({ id, title, price, description, category, image }) {
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <StarIcon className="h-5 text-yellow-500" />
+            <StarIcon key={i} className="h-5 text-yellow-500" />
           ))}
       </div>
 

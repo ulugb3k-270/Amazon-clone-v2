@@ -30,17 +30,6 @@ function CheckoutProduct({
     dispatch(addToBasket(products));
   };
   const removeItemFromBasket = () => {
-    const products = {
-      id,
-      title,
-      price,
-      rating,
-      description,
-      category,
-      image,
-      hasPrime,
-    };
-
     dispatch(removeFromBasket({ id }));
   };
   return (
