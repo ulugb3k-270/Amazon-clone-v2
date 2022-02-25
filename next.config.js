@@ -1,5 +1,6 @@
 module.exports = {
-    images: {
-        domains: ["pngimg.com", "fakestoreapi.com", "www.junglescout.com"]
-    }
+  reactStrictMode: true,
+  images: {
+  	domains: ["fakestoreapi.com"]
+  }
 }
